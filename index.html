@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Etch-A-Sketch</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-container"></div>
 
-        <script src="javascript/script.js"></script>
-    </body>
+<head>
+    <title>Etch-A-Sketch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="options-container">
+        <div class="toggle-container">
+            <div class="toggle-container-labels">
+                <p>Rainbow</p>
+                <p>Color</p>
+            </div>
+            <div class="toggle-container-buttons">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="clear-container">
+            <button type="clear" id="clear-button">Clear screen</button>
+        </div>
+    </div>
+    <div class="main-container"></div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
 </html>
