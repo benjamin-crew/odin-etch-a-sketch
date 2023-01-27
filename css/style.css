@@ -4,6 +4,9 @@ body {
 }
 
 .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     width: 50%;
     height: auto;
@@ -13,14 +16,33 @@ body {
 }
 
 .toggle-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .toggle-container-labels {
-    align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.toggle-container-buttons button {
+    margin-bottom: 0px;
+}
+
+.toggle-container-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
 }
 
 .main-container {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: auto;
     border: 3px solid black;

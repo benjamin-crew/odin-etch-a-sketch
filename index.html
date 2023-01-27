@@ -14,24 +14,25 @@
             <div class="toggle-container-labels">
                 <p>Rainbow</p>
                 <p>Color</p>
+                <p>Grid size</p>
             </div>
             <div class="toggle-container-buttons">
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
+                <input type="color">
+                <input type="range" id="gridSizeRange" min="4" max="36" value="16" step="4">
             </div>
         </div>
         <div class="clear-container">
             <button type="clear" id="clear-button">Clear screen</button>
         </div>
     </div>
-    <div class="main-container"></div>
+    <div class="main-container">
+        <p>Grid size: <output id="gridSizeValue"></output></p>
+        <div class="grid-container"</div>
+    </div>
 
     <script src="javascript/script.js"></script>
 </body>
